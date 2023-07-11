@@ -10,29 +10,39 @@
 </head>
 <body>
     <header>
-        <h1>Liste des CPUs</h1>
-        <img src="img/cpuz.webp">
+        <div id="presentation">
+            <h1 id="title">Liste des CPUs</h1>
+            <img id="logo" src="img/cpuz.webp" alt="Logo CPU Intel et AMD">
+        </div>
         <fieldset>
             <legend>Rechercher un modèle</legend>
-            <input type="search">
+            <label for="searchbar">Rechercher</label>
+            <input type="search" id="searchbar" placeholder="Nom complet du CPU">
         </fieldset>
     </header>
     <main>
-        <table>
+        <table id="tableau">
             <thead>
-            <tr>
-                <th>Identifiant</th>
-                <th>Marque</th>
-                <th>Famille</th>
-                <th>Modèle</th>
-                <th>Fréquence (Ghz)</th>
-                <th>Nom complet</th>
-            </tr>
+                <tr>
+                    <th>Identifiant</th>
+                    <th>Marque</th>
+                    <th>Famille</th>
+                    <th>Modèle</th>
+                    <th>Fréquence (Ghz)</th>
+                    <th id="priceColumn">Prix</th>
+                    <th>Nom complet</th>
+                </tr>
             </thead>
+            <tbody id="tablebody">
+
+            </tbody>
+            <tfoot id="tablefoot">
+
+            </tfoot>
         </table>
     </main>
     <footer>
-        <p>Nombre de modèles : <span>0</span></p>
+        <p>Nombre de modèles : <span id="nombreElement">0</span></p>
     </footer>
 </body>
 </html>
