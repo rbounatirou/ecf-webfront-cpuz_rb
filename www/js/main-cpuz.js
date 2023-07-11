@@ -5,6 +5,7 @@ let cpucoll = new CPUCollection();
 let cputable = new CPUGenerateTable(cpucoll);
 let priceOrderAsc = true;
 
+/* ELEMENT IMPOTANT A IDENTIFIER */
 let searchBar = document.querySelector('#searchbar');
 let priceColumn =document.querySelector('#priceColumn');
 let spanNbElement = document.querySelector('#nombreElement');
